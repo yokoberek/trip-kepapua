@@ -1,0 +1,500 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Eksplor Destinasi">
+    <section
+        class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-5 lg:py-16"
+    >
+        <div class="mb-6 flex flex-row justify-between">
+            <div class="max-w-xl mt-2 sm:text-left">
+                <h2
+                    class="text-2xl font-semibold leading-none tracking-tight text-gray-900 sm:text-3xl md:mx-auto"
+                >
+                    Destinasi Populer
+                </h2>
+            </div>
+            <div>
+                <button
+                    class="prev-button-1 rounded-full border border-current py-2 px-2 mr-2 text-gray-400 transition hover:scale-110"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        id="prevBtn1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+                    </svg>
+                </button>
+                <button
+                    class="next-button-1 rounded-full border border-current py-2 px-2 text-gray-600 transition hover:scale-110"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-gray-600"
+                        id="nextBtn1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="swiper-container-1 !overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="rounded-lg">
+                        <a
+                            href="#"
+                            class="relative block overflow-hidden rounded bg-[url(https://dummyimage.com/400x500/f0f0f0/8f8f8f.pngpg)] bg-cover bg-center bg-no-repeat"
+                        >
+                            <div
+                                class="relative bg-black bg-opacity-40 p-8 pt-40 text-white"
+                            >
+                                <h3
+                                    class="text-lg md:text-xl font-convergence font-bold"
+                                >
+                                    Teluk Cendrawasih
+                                </h3>
+
+                                <div class="flex flex-row gap-1">
+                                    <p class="text-sm font-jakartasans">
+                                        Wondama, Papua
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="rounded-lg">
+                        <a
+                            href="#"
+                            class="relative block overflow-hidden rounded bg-[url(https://dummyimage.com/400x500/f0f0f0/8f8f8f.png)] bg-cover bg-center bg-no-repeat"
+                        >
+                            <div
+                                class="relative bg-black bg-opacity-40 p-8 pt-40 text-white"
+                            >
+                                <h3
+                                    class="text-lg md:text-xl font-convergence font-bold"
+                                >
+                                    Pantai Tablanusu
+                                </h3>
+
+                                <div class="flex flex-row gap-1">
+                                    <p class="text-sm font-jakartasans">
+                                        Jayapura, Papua
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="rounded-lg">
+                        <a
+                            href="#"
+                            class="relative block overflow-hidden rounded bg-[url(https://dummyimage.com/400x500/f0f0f0/8f8f8f.png bg-cover bg-center bg-no-repeat"
+                        >
+                            <div
+                                class="relative bg-black bg-opacity-40 p-8 pt-40 text-white"
+                            >
+                                <h3
+                                    class="text-lg md:text-xl font-convergence font-bold"
+                                >
+                                    Kali Biru Genyem
+                                </h3>
+
+                                <div class="flex flex-row gap-1">
+                                    <p class="text-sm font-jakartasans">
+                                        Jayapura, Papua
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide">
+                    <blockquote class="rounded-lg">
+                        <a
+                            href="#"
+                            class="relative block overflow-hidden rounded bg-[url(https://dummyimage.com/400x500/f0f0f0/8f8f8f.pngmares.jpeg)] bg-cover bg-center bg-no-repeat"
+                        >
+                            <div
+                                class="relative bg-black bg-opacity-40 p-8 pt-40 text-white"
+                            >
+                                <h3
+                                    class="text-lg md:text-xl font-convergence font-bold"
+                                >
+                                    Telaga Biru Samares
+                                </h3>
+
+                                <div class="flex flex-row gap-1">
+                                    <p class="text-sm font-jakartasans">
+                                        Biak, Papua
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination !relative !bottom-0 text-left mt-4"></div>
+    </section>
+
+    <section
+        class="px-4 pt-8 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-5 lg:pb-36"
+    >
+        <div class="mb-10 lg:flex lg:flex-row justify-between md:mb-12">
+            <div class="max-w-xl sm:text-left">
+                <h2
+                    class="mb-6 text-2xl font-semibold leading-none tracking-tight text-gray-900 sm:text-3xl md:mx-auto"
+                >
+                    Temukan destinasi di kota favorit kamu
+                </h2>
+                <p class="text-base text-gray-700">
+                    Jelajahi destinasi yang paling digemari dan jangan lewatkan
+                    tempat-tempat wisata menakjubkan yang ada di kota favorit
+                    kamu.
+                </p>
+            </div>
+            <div class="max-w-lg w-full">
+                <form class="mt-6">
+                    <div class="relative">
+                        <label class="sr-only" for="email"> Email </label>
+
+                        <input
+                            class="w-full rounded-full border-gray-200 bg-gray-100 p-3.5 pl-6 text-sm font-medium outline-offset-2 outline-1 focus:outline focus:outline-gray-500"
+                            id="email"
+                            type="email"
+                            placeholder="Kota tujuan kamu..."
+                        />
+
+                        <button
+                            class="absolute top-1/2 right-1.5 -translate-y-1/2 rounded-full bg-amber-400 px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
+                            type="button"
+                        >
+                            <svg
+                                aria-hidden="true"
+                                class="w-5 h-5"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div
+            class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8 md:max-w-screen-xl mb-16"
+        >
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <a href="city-details.html">
+                    <img
+                        class="absolute inset-0 h-full w-full object-cover"
+                        src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                        alt=""
+                    />
+                    <div class="absolute inset-0 bg-gray-900 bg-opacity-50">
+                    </div>
+                    <div
+                        class="flex flex-col h-full text-center justify-center relative"
+                    >
+                        <h1
+                            class="text-base text-white font-semibold tracking-wider uppercase"
+                        >
+                            Jayapura
+                        </h1>
+                        <p class="text-sm text-white text-opacity-75">Papua</p>
+                    </div>
+                </a>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Biak
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">Papua</p>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Serui
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">Papua</p>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Nabire
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">
+                        Papua Tengah
+                    </p>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Jayawijaya
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">
+                        Papua Pegunungan
+                    </p>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Merauke
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">
+                        Papua Selatan
+                    </p>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Manokwari
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">
+                        Papua Barat
+                    </p>
+                </div>
+            </div>
+            <div
+                class="w-full max-w-lg h-48 lg:h-64 rounded shadow-2xl overflow-hidden relative transition hover:scale-105"
+            >
+                <img
+                    class="absolute inset-0 h-full w-full object-cover"
+                    src="https://dummyimage.com/400x500/f0f0f0/8f8f8f.png"
+                    alt=""
+                />
+                <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                <div
+                    class="flex flex-col h-full text-center justify-center relative"
+                >
+                    <h1
+                        class="text-base text-white font-semibold tracking-wider uppercase"
+                    >
+                        Raja Ampat
+                    </h1>
+                    <p class="text-sm text-white text-opacity-75">
+                        Papua Barat
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center">
+            <a
+                class="inline-block rounded border border-current px-10 py-3.5 text-sm font-medium text-gray-600 transition hover:scale-110"
+                href="#"
+            >
+                <span class="text-gray-800 font-semibold"> Lihat lainnya </span>
+            </a>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    /* styling for default arrow in select drowdown list */
+    @media only screen and (min-width: 320px) {
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper::after {
+            content: "\2304";
+            font-size: 1.5rem;
+            top: 6px;
+            left: 100px;
+            position: absolute;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper::after {
+            content: "\2304";
+            font-size: 1.5rem;
+            top: 6px;
+            right: 10px;
+            position: absolute;
+        }
+    }
+</style>
+
+<script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper-container-1", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 7000,
+            },
+            navigation: {
+                nextEl: ".next-button-1",
+                prevEl: ".prev-button-1",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    centeredSlides: false,
+                    slidesPerView: 3.5,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        swiper.on("slideChange", function () {
+            // prev-button
+            var button = document.querySelector(".prev-button-1");
+            if (!swiper.isBeginning) {
+                button.classList.remove("text-gray-400");
+                button.classList.add("text-gray-600");
+                document
+                    .getElementById("prevBtn1")
+                    .classList.add("text-gray-600");
+            } else {
+                button.classList.remove("text-gray-600");
+                button.classList.add("text-gray-400");
+                document
+                    .getElementById("prevBtn1")
+                    .classList.remove("text-gray-600");
+            }
+
+            // next-button
+            var button = document.querySelector(".next-button-1");
+            console.log(swiper.isEnd);
+            if (swiper.isEnd) {
+                button.classList.remove("text-gray-600");
+                button.classList.add("text-gray-400");
+                document
+                    .getElementById("nextBtn1")
+                    .classList.remove("text-gray-600");
+            } else {
+                button.classList.remove("text-gray-400");
+                button.classList.add("text-gray-600");
+                document
+                    .getElementById("nextBtn1")
+                    .classList.add("text-gray-600");
+            }
+        });
+    });
+</script>

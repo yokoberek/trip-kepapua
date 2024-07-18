@@ -1,0 +1,272 @@
+<header
+    class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-28"
+>
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center">
+            <div
+                class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-6"
+            >
+                <h2
+                    class="max-w-2xl mb-6 text-3xl font-averia font-bold leading-none tracking-normal text-[#040641] sm:text-6xl md:mx-auto"
+                >
+                    Jelajahi keindahan Alam Tanah Papua
+                </h2>
+                <p class="text-base text-gray-700 my-6 md:text-lg">
+                    Fun history 😁
+                </p>
+            </div>
+
+            <div
+                id="json-example-with-tab-filter-in-dropdown-tab-preview-markup"
+                class="border rounded-xl shadow-sm"
+            >
+                <div class="">
+                    <!-- SearchBox -->
+                    <div class="relative">
+                        <div class="relative">
+                            <div
+                                class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-3.5"
+                            >
+                                <svg
+                                    class="flex-shrink-0 h-6 w-6 text-gray-400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="M21 21l-4.3-4.3"></path>
+                                </svg>
+                            </div>
+                            <input
+                                class="py-3 pl-12 w-full border-gray-200 rounded-full text-sm focus:outline-none disabled:opacity-50 disabled:pointer-events-none"
+                                type="text"
+                                placeholder="Cari tempat favorite kamu"
+                                id="search-input"
+                                aria-label="Cari tempat favorite kamu"
+                            />
+                        </div>
+
+                        <!-- SearchBox Dropdown -->
+                        <div
+                            id="dropdown"
+                            class="absolute z-50 w-full bg-white rounded-xl shadow-[0_10px_40px_10px_rgba(0,0,0,0.08)] hidden"
+                        >
+                            <div class="p-2">
+                                <!-- Group Buttons -->
+                                <div
+                                    class="overflow-x-auto rounded-t-xl border-b border-gray-200 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
+                                    id="group-buttons"
+                                >
+                                    <button
+                                        type="button"
+                                        class="capitalize py-1 px-2 inline-flex items-center gap-x-2 text-sm text-nowrap rounded-md border border-gray-200 bg-white text-gray-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+                                        data-group="all"
+                                    >
+                                        All
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="capitalize py-1 px-2 inline-flex items-center gap-x-2 text-sm text-nowrap rounded-md border border-gray-200 bg-white text-gray-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+                                        data-group="pantai"
+                                    >
+                                        Pantai
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="capitalize py-1 px-2 inline-flex items-center gap-x-2 text-sm text-nowrap rounded-md border border-gray-200 bg-white text-gray-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-100"
+                                        data-group="sungai"
+                                    >
+                                        Sungai
+                                    </button>
+                                </div>
+
+                                <!-- Search Results -->
+                                <div
+                                    class="max-h-60 mt-2 p-2 rounded-b-xl overflow-y-auto overflow-hidden scrollbar-w-2 scrollbar-thumb-rounded-full scrollbar-track-bg-gray-100 scrollbar-thumb-bg-gray-300"
+                                    id="results"
+                                >
+                                </div>
+                                <div
+                                    class="text-gray-600 text-sm mt-1"
+                                    id="no-results"
+                                    style="display: none"
+                                >
+                                    Nothing found...
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End SearchBox Dropdown -->
+                    </div>
+                    <!-- End SearchBox -->
+                </div>
+            </div>
+
+            <p
+                class="mb-10 mt-4 text-sm text-gray-800 font-normal truncate w-11/12 sm:text-base md:mb-16"
+            >
+                <span class="relative inline-block">
+                    <span class="relative font-semibold text-gray-800"
+                        >Trending:</span
+                    >
+                </span>
+                Kali Biru, Bukit Teletubies, Pantai Amai, Rumput Mei, Festival Menara
+                Wampasi
+            </p>
+        </div>
+    </div>
+</header>
+
+<style>
+    .hidden {
+        display: none;
+    }
+    .visible {
+        display: block;
+    }
+    .active-item {
+        background-color: #e2e8f0; /* Tailwind bg-gray-200 */
+        color: #1a202c; /* Tailwind text-gray-800 */
+    }
+</style>
+
+<script>
+    const products = [
+        {
+            id: 1,
+            title: "Pantai base",
+            url: "pantaibase.html",
+            group: "pantai",
+        },
+        {
+            id: 2,
+            title: "Pantai amai",
+            url: "pantaiamai.html",
+            group: "pantai",
+        },
+        {
+            id: 3,
+            title: "Pantai tablanusa",
+            url: "pantaitablanusa.html",
+            group: "pantai",
+        },
+        {
+            id: 4,
+            title: "Pantai dormena",
+            url: "pantaidormena.html",
+            group: "pantai",
+        },
+        {
+            id: 5,
+            title: "kali biru",
+            url: "kalibiru.html",
+            group: "sungai",
+        },
+    ];
+
+    const searchInput = document.getElementById("search-input");
+    const resultsContainer = document.getElementById("results");
+    const dropdown = document.getElementById("dropdown");
+    const noResultsMessage = document.getElementById("no-results");
+    const groupButtons = document.querySelectorAll("[data-group]");
+    let activeIndex = -1;
+
+    function performSearch(group = "all") {
+        const searchText = searchInput.value.trim().toLowerCase();
+        resultsContainer.innerHTML = "";
+        noResultsMessage.style.display = "none";
+        activeIndex = -1;
+
+        let filteredProducts = products;
+
+        if (group !== "all") {
+            filteredProducts = filteredProducts.filter(
+                (product) => product.group === group,
+            );
+        }
+
+        if (searchText !== "") {
+            filteredProducts = filteredProducts.filter((product) =>
+                product.title.toLowerCase().includes(searchText),
+            );
+        }
+
+        if (filteredProducts.length > 0) {
+            filteredProducts.forEach((product, index) => {
+                const div = document.createElement("div");
+                div.className =
+                    "cursor-pointer p-2 space-y-0.5 w-full text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 ";
+                div.textContent = product.title;
+                div.tabIndex = index; // Assigning tab index for keyboard navigation
+                div.addEventListener("click", () => {
+                    searchInput.value = product.title;
+                    window.location.href = product.url;
+                    dropdown.classList.add("hidden");
+                });
+                resultsContainer.appendChild(div);
+            });
+
+            dropdown.classList.remove("hidden");
+            noResultsMessage.style.display = "none";
+        } else {
+            dropdown.classList.remove("hidden");
+            noResultsMessage.style.display = "block";
+        }
+    }
+
+    searchInput.addEventListener("input", function () {
+        performSearch(
+            document.querySelector(".active-group")?.dataset.group || "all",
+        );
+    });
+
+    searchInput.addEventListener("focus", function () {
+        if (searchInput.value.trim() === "") {
+            performSearch(
+                document.querySelector(".active-group")?.dataset.group || "all",
+            );
+            dropdown.classList.remove("hidden");
+        }
+    });
+
+    searchInput.addEventListener("keydown", function (event) {
+        const items = resultsContainer.querySelectorAll("div");
+        if (event.key === "ArrowDown") {
+            event.preventDefault();
+            if (activeIndex < items.length - 1) {
+                activeIndex++;
+                items[activeIndex].classList.add("active-item");
+                if (activeIndex > 0)
+                    items[activeIndex - 1].classList.remove("active-item");
+            }
+        } else if (event.key === "ArrowUp") {
+            event.preventDefault();
+            if (activeIndex > 0) {
+                activeIndex--;
+                items[activeIndex].classList.add("active-item");
+                if (activeIndex < items.length - 1)
+                    items[activeIndex + 1].classList.remove("active-item");
+            }
+        } else if (event.key === "Enter" && activeIndex > -1) {
+            event.preventDefault();
+            items[activeIndex].click();
+        }
+    });
+
+    document.addEventListener("click", function (event) {
+        if (
+            !searchInput.contains(event.target) &&
+            !dropdown.contains(event.target)
+        ) {
+            dropdown.classList.add("hidden");
+        }
+    });
+
+    groupButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            groupButtons.forEach((btn) => btn.classList.remove("active-group"));
+            button.classList.add("active-group");
+            performSearch(button.dataset.group);
+        });
+    });
+</script>
